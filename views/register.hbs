@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container  ">
+        <div class="row">
+            <div class="col-md-12 pull-md-right main-content">
+                <div id="registration" class="form-register text-center">
+                    <form method="post" action="" role="form" >
+                        <a href="/"><i class="fa fa-globe fa-3x text-danger"></i></a>
+                        <h2 class="form-signin-heading">Create an Account</h2>
+                        <div id="containerNewUserSignup">
+
+                            <div class="sub-heading">
+                                <span>Personal Information</span>
+                                <h4 style="color: red;">{{send_back}}</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group prepend-icon">
+                                        <label for="inputFirstName" class="field-icon">
+                                            
+                                        </label>
+                                        <input type="text" name="firstname" class="field form-control" placeholder="First Name" value="Akashdeep" autofocus>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group prepend-icon">
+                                        <label for="inputFirstName" class="field-icon">
+                                            
+                                        </label>
+                                        <input type="text" name="lastname" class="field form-control" placeholder="Last Name" value="Singh">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group prepend-icon">
+                                        <label for="inputFullName" class="field-icon">
+                                           
+                                        </label>
+                                        <input type="email" name="email" class="field form-control" placeholder="Email" value="akashdeep@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group prepend-icon">
+                                        <label for="inputUsername" class="field-icon">
+                                           
+                                        </label>
+                                        <input type="text" name="username" class="field form-control" placeholder="Username" value="akash">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group prepend-icon">
+                                        <label for="inputPhone" class="field-icon">
+                                            
+                                        </label>
+                                        <input type="tel" name="phonenumber" class="field form-control" placeholder="Phone Number" value="789456123">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group prepend-icon">
+                                        <label for="inputPhone" class="field-icon">
+                                            
+                                        </label>
+                                        <input type="password" name="password" class="field form-control" placeholder="password" value="password">
+                                    </div>
+                                </div>
+                            </div>
+
+                  
+                        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Register" />
+                        <!--<button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-top: -10px">Inscription</button>-->
+                    </form>
+                    <div class="noclient text-left">
+                        Already a client? <a href="/login" class=" text-secondary">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>

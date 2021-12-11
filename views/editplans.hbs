@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<title>
+Canadian Dedicated Servers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/wp-content/themes/whc/css/all.css" type="text/css">
+<link rel="stylesheet" href="/wp-content/themes/whc/css/whc_font.css?1637002524">
+<link rel="stylesheet" href="/wp-content/themes/whc/css/montserrat.css" type="text/css">
+<link rel="stylesheet" href="/wp-content/themes/whc/css/opensans.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link href="https://spectrum-roan-kitten.glitch.me/style.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><!-- multilingual website powered with xili-language v. 2.21.2 - WP plugin of dev.xiligroup.com -->
+
+<script type='text/javascript' src='/wp-content/plugins/bwp-minify/min/?b=wp-content/themes/whc&f=css-modules/whc.js,css-modules/calc.min.js&1530801560'></script>
+<script type="text/javascript" src="/wp-content/themes/whc/js/modernizr.js"></script>
+
+</head>
+<body id="body" class="page-template-default page page-id-84 page-child parent-pageid-54">
+
+<div id="plans" class="container-fluid">
+	
+	<div class="container text-center">
+		<div class="row">
+			{{#each all_plans}}
+			<div class="col plan colright">
+				<img src="/uploads/{{this.image_path}}" style="width: 70px;">
+			  <h2>{{this.name}}</h2>
+				Powerful server for multiple websites or one power-hungry site.
+				<span class="price"><strong>C${{this.price}}</strong> /<french>mois</french><english>month</english></span>
+				<a href="/edit-package/{{this.packageID}}" class="btn btn-lg btn-block btn-primary">Edit this Plan</a>
+				<div class="detailsplans">
+					<ul>
+						<li><i class="fas fa-user-ninja" aria-hidden="true"></i>{{#if this.ssl}}<b>Free SSL</b>{{else}}<s>Free SSL</s>{{/if}}</li>
+						<li><i class="fas fa-microchip" aria-hidden="true"></i>domain : {{this.domain}}</li>
+						<li><i class="fas fa-memory" aria-hidden="true"></i>{{#if this.enterprise_email}}<b>Enterprise Email</b>{{else}}<s>Enterprise Email</s>{{/if}}</li>
+						<li><i class="fas fa-hdd" aria-hidden="true"></i>{{#if this.hosting_features}}<b>Extra Hosting Features</b>{{else}}<s>Extra Hosting Features</s>{{/if}}</li>
+						<li><i class="fas fa-tachometer-alt" aria-hidden="true"></i> {{#if this.this.site_migration}}<b>Site Migration</b>{{else}}<s>Site Migration</s>{{/if}}</li>
+						<li><i class="fas fa-tachometer-alt" aria-hidden="true"></i>Features : {{this.features}}</li>
+						<li><i class="fas fa-leaf" style="color: #28a745" aria-hidden="true"></i> <strong>Powered</strong> by <a href="/plans" class="underline">{{this.poweredby}}</a></li>
+						<li><i class="fas fa-user-ninja" aria-hidden="true"></i>Email Marketing : {{this.email_marketing}}</li>
+						<li><i class="fas fa-user-ninja" aria-hidden="true"></i>{{#if this.dedicated_ip}}<b>Dedicated IP</b>{{else}}<s>Dedicated IP</s>{{/if}}</li>
+					</ul>
+			  </div>		  
+			</div>
+			
+			{{/each}}
+		</div>
+	</div>
+	
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<style>
+    .bt{
+        background:blue;
+        color:#fff;
+        width:100%;
+        padding:10px;
+    }
+    .card-body:hover {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
+    }
+    
+    .shadow {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .selected {
+        background: #097ffa;
+        color: #fff;
+    }
+
+    button{
+        border:none;
+        background:transparent;
+    }
+</style>
+
+
+
+<style>
+    #featured-products .weareopen,
+    #featured-products .blm {
+        color: white;
+        background-repeat: no-repeat !important;
+        background-blend-mode: normal !important;
+        background: url('https://whc.ca/wp-content/themes/whc/images/weareopen.jpg') center top;
+        padding: 100px 20px;
+        background-size: cover !important;
+    }
+    
+    #powerful-solutions {
+        padding: 60px 0;
+        text-align: center;
+        font-size: large;
+    }
+    
+    #powerful-solutions i {
+        font-size: 80px;
+        color: #c0242e;
+        margin-bottom: 20px;
+    }
+    
+    #powerful-solutions h3 {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    #powerful-solutions .btn {
+        margin: 20px 0 10px 0;
+    }
+    
+    #powerful-solutions .sale {
+        background: #FC0;
+        padding: 6px 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: small;
+        transition: 0.5s;
+    }
+    
+    #why,
+    #blog-articles {
+        padding: 100px 0;
+        clear: both;
+    }
+    
+    .why-choose-us-icon {
+        width: 81px;
+        background-image: url(https://whc.ca/wp-content/themes/whc/css-modules/images/icon-sprite.png?v1?v1);
+        height: 81px;
+        background-repeat: no-repeat;
+        margin: 40px auto 15px;
+    }
+    
+    #cira-campaign-2020 {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        background: #cc132c;
+        text-transform: uppercase;
+        font-size: 5em;
+        line-height: 1em;
+        text-align: center;
+    }
+</style>
+
+<body id="body">
+    <style>
+        .dropdown-toggle::after {
+            display: none;
+        }
+        
+        .text-decoration-none {
+            text-decoration: none!important;
+        }
+        /* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+        
+        .icon-width {
+            width: 2rem;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            if ($(window).width() > 991) {
+                $('.navbar-light .d-menu').hover(function() {
+                    $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+                }, function() {
+                    $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+                });
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <div id="top" class="container-fluid pt-5" >
+        <div id="menu" class="container">
+            <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="/">
+                        <img src="https://whc.ca/wp-content/themes/whc/css-modules/images/logo_en-normal.svg">
+
+                    </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+    <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbar4">
+                        <ul class="navbar-nav mr-auto pl-lg-4">
+                            <li class="nav-item px-lg-2 active">
+                                <a class="nav-link" href="#"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
+                            </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Services</a> </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>About</a> </li>
+
+                            <li class="nav-item px-lg-2 dropdown d-menu">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-caret-square-down"></i></span>Dropdown
+    <svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+    </a>
+                                <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Contact</a> </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-twitter"></i><span class="d-lg-none ml-3">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-facebook"></i><span class="d-lg-none ml-3">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-instagram"></i><span class="d-lg-none ml-3">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+
+    <section style="background: #eeeeee;">
+        <div class="container   py-5">
+            <div class="row" style="background: #fff;">
+                <div class="col-md-8 py-2">
+                    <div class="row p-4">
+                        <div id="config" class="col-md-12 cart-items">
+                            <div id="product" data-test="box-products-configure">
+                                <div class="box product">
+                                    <h3 class="font-weight-bold" id="name">
+                                        <i class="fas fa-server" aria-hidden="true" ></i> Web Hosting:  </h3>
+                                    <div class="row billingcycles " data-test="configure-box-product-billing-cycles">
+                                        <button class="product_billing_cycle col-md-3"  onclick="loadDoc(1)">
+                                            <div class="card h-100" id="month1color">
+                                                <div class="card-body py-5"> <small class="billingcycle" id="month1" > 1 month</small> <strong>
+                                            <span class="large"id="1monthprice"> $46.25</span>/month</strong>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="product_billing_cycle col-md-3 " onclick="loadDoc(12)">
+                                            <div class="card h-100" id="month12color">
+                                                <div class="card-body py-5"> <small class="billingcycle" id="month12">
+                                        12 months</small> <strong>
+                                            <span class="large" id="12monthprice"> $39.25</span>/month</strong>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="product_billing_cycle col-md-3" onclick="loadDoc(24)">
+                                            <div class="card h-100 selected"  id="month24color" >
+                                                <div class="card-body py-5"> <small class="billingcycle"  id="month24">
+                                        24  months</small> <strong>
+                                            <span class="large" id="24monthprice">$33.25</span>/month</strong>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="product_billing_cycle col-md-3" onclick="loadDoc(36)">
+                                            <div class="card h-100 "  id="month36color">
+                                                <div class="card-body py-5"> <small class="billingcycle" id="month36">
+                                                              36  months</small> <strong>
+                                                                  <span class="large" id="36monthprice">
+                                                                     $30.25</span>/month</strong>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <small class="text-muted renewal product_renewal">
+                        Plan will renew on <span id="renew_date">Sat Dec 03 2022</span> </small>
+
+
+                                    <!-- IF ADDITONIAL INFO REQUIRED -->
+                                    <!-- END IF -->
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="shadow p-4">
+                        <div id="order-summary" class="box order-summary" data-test="order-summary">
+                            <h3 class="font-weight-bold">Order Summary</h3>
+                            <i id="hideOS" class="fas fa-times-circle text-primary" aria-hidden="true"></i>
+                            <ul class="list-group mb-3" data-test="cart-items-list">
+                                <li class="list-group-item lh-condensed">
+                                    <div class="float-right text-right">
+                                        <strong class="text-muted" id="selectedprice">
+                                                                $798</strong>
+                                    </div>
+                                    <div class="clearfix" data-test="hover-product-order-summary">
+                                        <strong class="product my-0 font-weight-bold" id="nameshow">Starter</strong>
+                                    </div>
+                                    <div class="clearfix">
+                                        <small class="text-muted"><strong id="selectedmonths">24 months</strong></small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item lh-condensed">
+                                    <div class="float-right text-right">
+                                        <strong class="text-muted" >$29.89</strong><br>
+                                    </div>
+                                    <div>
+                                        <strong class="product my-0" data-test="hover-domain-order-summary">
+                                    <span>
+                                       example.com                                                </span>
+                                    
+                                </strong>
+                                        <small class="text-muted">
+                                    </div>
+                                    <div class="clearfix domain-privacy">
+                                        <small class="text-muted">Domain Privacy</small>
+                                        <small class="text-muted float-right text-right price">$9.99</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-light">
+                                    <div>
+                                        <small class="text-muted have_a_coupon_txt" style="text-decoration: underline" data-test="promocode-have-a-coupon-txt">Have a coupon code?</small>
+                                        <form class="coupon_form" _lpchecked="1" data-pid="111">
+                                            <div class="form-group input-group">
+                                                <input type="text" name="promocode" class="form-control form-control-sm" placeholder="Coupon code" data-test="promocode-input">
+                                                <div class="input-group-append">
+                                                    <button type="submit" class="btn btn-sm btn-secondary" data-test="promocode-redeem">Redeem</button>
+                                                </div>
+                                                <div class="invalid-feedback promocode-feedback" data-test="promocode-feedback"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="total list-group-item d-flex justify-content-between" data-test="order-summary-total">
+                                    <span>Total</span>
+                                    <div>
+                                        <strong id="totalprice">$837.88</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="/checkout" class=" btn btn-block btn-primary" >Checkout Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function changeColor(add,del){
+    var element = document.getElementById('month'+add+'color');
+    element.classList.add('selected');
+    del.classList.remove('selected');
+    }
+
+    function dateCalculate(month){
+        var d = new Date();
+        d.setMonth(d.getMonth() + Number(month));
+        return d
+    }
+
+    function loadDoc(a) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+        cart = JSON.parse(xhttp.responseText);
+        document.getElementById('name').innerHTML = "Web Hosting: "+ cart.cart.name;
+        document.getElementById('nameshow').innerHTML =  cart.cart.name;
+        document.getElementById('selectedmonths').innerHTML = cart.selectedmonth+ " months";
+        document.getElementById('1monthprice').innerHTML = "$" +cart.onemonth.toFixed(2);
+        document.getElementById('12monthprice').innerHTML ="$" + cart.twelvemonth.toFixed(2);
+        document.getElementById('24monthprice').innerHTML ="$" + cart.twentyfour.toFixed(2);
+        document.getElementById('36monthprice').innerHTML ="$" + cart.thirtysix.toFixed(2);
+        document.getElementById('selectedprice').innerHTML ="$" + cart.cart.price.toFixed(2);
+        document.getElementById('totalprice').innerHTML = "$" +cart.cart.totalprice.toFixed(2);
+        del = document.querySelectorAll('.selected')[0];
+        changeColor(cart.selectedmonth,del);
+        document.getElementById('renew_date').innerHTML = dateCalculate(cart.selectedmonth); 
+      }
+    };
+    xhttp.open("GET", "/cartx/"+a, true);
+    xhttp.send();
+    }
+    window.onload=()=>{
+        loadDoc(12)
+    };
+    </script>
+</html>

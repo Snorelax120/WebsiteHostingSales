@@ -1,0 +1,92 @@
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<section style="background: #097ffa linear-gradient(
+40deg,#c0242e 0,#097ffa 100%) fixed !important;">
+<div class="container">
+    <div class="row">
+<div class="col-md-2"></div>
+    <div class="col-md-8 mt-4 p-4" style="background: #fff">
+        <a href="/logout">logout</a>
+<form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="name" class="form-label">Package Name</label>
+            <input type="text" class="form-control" name="name" value="{{package.name}}" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="price" class="form-label">Price in Numbers</label>
+            <input type="text" class="form-control" name="price" value="{{package.price}}" required>
+            <span></span>
+        </div>
+         <div>
+            <label for="websites" class="form-label">Number of Websites</label>
+            <input type="text" class="form-control" name="websites" value="{{package.websites}}" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="poweredby" class="form-label">Powered by</label>
+            <input type="text" class="form-control" name="poweredby" value="{{package.poweredby}}" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="enterprise_email" class="form-label">Enterprise Email Include</label>
+            <select name="enterprise_email" id="enterprise_email">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        <div>
+            <label for="hosting_features" class="form-label">Extra Features Include</label>
+            <select name="hosting_features" id="hosting_features">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        <div>
+            <label for="site_migration" class="form-label">Site Migration</label>
+            <select name="site_migration" id="site_migration">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        <div>
+            <label for="features" class="form-label">Features</label>
+            <input type="text" class="form-control" name="features" value="{{package.features}}" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="domain" class="form-label">Domain</label>
+            <select name="domain" id="domain">
+                <option value="Single">Single</option>
+                <option value="10">10</option>
+                <option value="Unlimited">Unlimited</option>
+            </select>
+        </div>
+        <div>
+            <label for="email_marketing" class="form-label">Email Marketing</label>
+            <input type="text" class="form-control" name="email_marketing" value="{{package.email_marketing}}" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="ssl" class="form-label">SSL Include</label>
+            <select name="ssl" id="ssl">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        <div>
+            <label for="dedicated_ip" class="form-label">Dedicated IP</label>
+            <select name="dedicated_ip" id="dedicated_ip">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+  <input type="file" name="image" />
+   <input type="submit" name="submit" value="submit"  class="btn btn-info"/>
+</form>
+    </div>
+<div class="col-md-2"></div> 
+</div>
+    </div>
+    </section>

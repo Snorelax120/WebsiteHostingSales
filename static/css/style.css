@@ -1,0 +1,474 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #27283c;
+    font-weight: 400;
+}
+
+#domain-spinner .input-group,
+.page-template-page-spinner .cartisempty .domainsearch .input-group,
+.domainsearch .input-group {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+}
+
+#domain-spinner .container,
+#domain-spinner .col-7,
+#domain-spinner .col-5 {
+    padding: 0 8px;
+}
+
+#domain-spinner ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 7px 0 0 0;
+}
+
+#domain-spinner ul li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+#domain-spinner ul li i {
+    font-size: x-small !important;
+    margin-left: 5px;
+}
+
+.search-complete.searchFiltredTlds #tlds .tldEndSearch .notAllTlds,
+.search-complete.searchAllTlds #tlds .tldEndSearch .AllTlds {
+    display: inline-block;
+}
+
+#config-options {
+    padding: 60px 0;
+    background: #f8f9fa!important;
+}
+
+#config-options .card-text {
+    font-size: 14px;
+}
+
+#config-options .card {
+    transition: .2s ease;
+    margin: 10px 0;
+    background: none;
+    border: none;
+}
+
+#config-options h2 {
+    margin-bottom: 30px;
+    font-size: 39px;
+}
+
+#config-options .card-body {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, .125) !important;
+    padding-bottom: 50px;
+}
+
+#config-options .large-icon {
+    margin-bottom: 10px;
+    color: #c52127;
+    font-size: 52px;
+}
+
+#config-options .col-md-3 {
+    display: flex;
+}
+
+
+/* START HEADERS */
+
+#post-84 #header,
+#post-140 #header
+/* Dedicated Servers */
+
+{
+    background: linear-gradient(to right, #27283c 45%, rgba(39, 40, 40, 0.6) 70%, #27283c 100%), url(https://whc.ca/wp-content/themes/whc/css-modules/images/image-mockups/dedicated.jpg) top;
+}
+
+#header {
+    background-blend-mode: multiply;
+    background-size: cover !important;
+    padding: 80px 0;
+    color: white;
+    font-size: large;
+}
+
+
+/*  End Header  */
+
+#plans .col.plan,
+#otherProducts .col.plan {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px 36px;
+    margin: 15px 10px;
+    animation: fadeinlate 2.5s;
+    max-width: 33%;
+}
+
+#plans .col.plan p,
+#otherProducts .col.plan p {
+    margin-bottom: 0;
+    height: 50px;
+}
+
+#plans .col.plan .coupon,
+#otherProducts .col.plan .coupon {
+    margin-top: 10px;
+}
+
+#plans .col.plan .fa-layers,
+#otherProducts .col.plan .fa-layers {
+    line-height: 0;
+}
+
+#plans .col.plan .fa-layers i:last-of-type,
+#otherProducts .col.plan .fa-layers i:last-of-type {
+    left: calc(50% + 7px);
+    top: 35px;
+    font-size: x-large;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    position: absolute;
+}
+
+#plans .col.col-md-4,
+#otherProducts .col.col-md-4 {
+    max-width: calc(33.33% - 20px) !important;
+}
+
+
+/*#plans .col.colleft, #otherProducts .col.colleft{
+	animation:fadeinlateleft 2.5s;
+}
+#plans .col.colright, #otherProducts .col.colright{
+	animation:fadeinlateright 2.5s;
+}*/
+
+#plans .col.colmp,
+#otherProducts .col.colmp {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /*animation:fadein 2s;*/
+    z-index: 10;
+}
+
+#plans .col.colmp:hover,
+#otherProducts .col.colmp:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#plans table {
+    background: white;
+}
+
+#plans .underline {
+    color: initial;
+    text-decoration: underline;
+}
+
+#plans .mp,
+#otherProducts .mp {
+    background: #c52127;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    padding: 8px;
+    max-width: 180px;
+    margin: -60px auto 18px auto;
+}
+
+#plans .trial {
+    background: #27283c;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    padding: 8px;
+    max-width: 180px;
+    margin: -60px auto 18px auto;
+}
+
+#plans .col h2,
+#otherProducts .col h2 {
+    margin: 10px 0 5px;
+}
+
+#plans .col .aslow {
+    display: block;
+    margin: 10px 0 -6px;
+}
+
+#plans .col .price {
+    display: block;
+}
+
+#plans .col .price strong {
+    font-size: xx-large;
+    color: #c52127;
+    font-weight: 800;
+}
+
+#plans .col small {
+    color: #999;
+}
+
+#plans .col small strong {
+    text-transform: uppercase;
+    color: #333;
+    padding: 0 5px;
+}
+
+#plans .col a.btn,
+#otherProducts .col a.btn {
+    margin-top: 15px;
+    /*text-transform:uppercase;*/
+}
+
+#plans .iplan,
+#otherProducts .iplan {
+    font-size: 38px;
+    color: #c52127;
+}
+
+#plans .details {
+    margin: 5px 0 10px;
+}
+
+#plans .details a {
+    margin-top: 0;
+}
+
+#plans .details a.btn {
+    text-transform: none;
+}
+
+#plans .details a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#plans .details a i {
+    font-size: large;
+    margin-right: 5px;
+}
+
+#plans .detailsplans {
+    margin-top: 20px;
+}
+
+#plans .detailsplans ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+#plans .detailsplans ul li {
+    padding: 5px 0 0 32px;
+}
+
+#plans .detailsplans ul li i {
+    color: #ccc;
+    font-size: large;
+    margin-top: 5px;
+    margin-left: -32px;
+    width: 28px;
+    text-align: center;
+}
+
+#plans .detailsplans ul li:last-child {
+    padding-bottom: 0;
+}
+
+#plans .detailsplans ul li i.infos {
+    color: #007bff;
+    margin-top: 5px;
+    font-size: medium;
+    margin-left: -5px;
+}
+
+#plans .detailsplans ul li i.perf {
+    float: none;
+    color: inherit;
+    font-size: small;
+    width: auto;
+    margin-left: 0;
+}
+
+#plans .detailsplans ul li i.text-muted {
+    opacity: 0.4;
+}
+
+#relance {
+    background: #097ffa;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 80px 0;
+}
+
+#footer {
+    background: #27283c;
+    color: white;
+    padding: 40px 0;
+    font-size: small;
+}
+
+#footer ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding-left: 20px;
+}
+
+#footer ul li:first-child {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #666;
+}
+
+#footer ul li a {
+    color: #ccc
+}
+
+#disclaimers .modal-header {
+    padding: 15px 30px;
+}
+
+#disclaimers .modal-body {
+    background: #eee;
+    padding: 15px 30px;
+    border-radius: 0 0 6px 6px;
+    font-size: small;
+}
+
+.scrolltable {
+    width: 100%;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#pre-footer {
+    background: #33354F;
+    color: white;
+    padding: 40px 40px 20px 40px;
+}
+
+#pre-footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#pre-footer ul li {
+    color: #8a8ca2;
+    font-size: small;
+}
+
+#pre-footer ul li:first-child {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: medium;
+    color: white;
+}
+
+#pre-footer ul li:last-child {
+    margin-bottom: 20px;
+}
+
+#pre-footer ul li a {
+    color: #8a8ca2;
+    font-size: small;
+    padding-bottom: 5px;
+}
+
+#pre-footer ul.whc li:first-child {
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+#pre-footer ul.whc li:nth-child(2) {
+    font-size: small;
+    color: #8a8ca2;
+}
+
+#pre-footer ul.whc li:last-child {
+    font-size: medium;
+}
+
+#pre-footer ul.whc li {
+    margin-bottom: 20px;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+}
+
+#pre-footer ul.whc li i {
+    color: #8a8ca2;
+    font-size: large;
+    margin-right: 5px;
+}
+
+#pre-footer .fa-stack {
+    font-size: medium;
+}
+
+#pre-footer .fa-stack-2x {
+    font-size: 2em !important;
+}
+
+#pre-footer .facebook .fa-stack-2x {
+    color: #3e5b94;
+}
+
+#pre-footer .twitter .fa-stack-2x {
+    color: #57acea;
+}
+
+#pre-footer .linkedin .fa-stack-2x {
+    color: #0f78b1;
+}
+
+#pre-footer .instagram .fa-stack-2x {
+    background: -webkit-linear-gradient(45deg, #ffbe08 0%, #f44635 50%, #9c27b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #C13584;
+}
+
+#pre-footer .youtube .fa-stack-2x {
+    color: #FF0000;
+}
+
+#pre-footer .facebook:hover,
+#pre-footer .twitter:hover,
+#pre-footer .linkedin:hover,
+#pre-footer .youtube:hover,
+#pre-footer .instagram:hover {
+    text-decoration: none;
+}
+
+#pre-footer .fa-inverse {
+    color: white !important;
+}
+
+#pre-footer .col-md-12 {
+    border-top: 1px solid rgba(137, 139, 152, 0.5);
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+#pre-footer .pull-right {
+    color: #8a8ca2;
+    font-size: small;
+    margin-top: 5px;
+}
+
+#pre-footer .pull-right i {
+    color: white;
+    margin-left: 25px;
+    margin-right: 5px;
+}

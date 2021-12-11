@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en-CA">
+
+<head>
+    <title>Web Hosting Canada</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<style>
+    #featured-products .weareopen,
+    #featured-products .blm {
+        color: white;
+        background-repeat: no-repeat !important;
+        background-blend-mode: normal !important;
+        background: url('https://whc.ca/wp-content/themes/whc/images/weareopen.jpg') center top;
+        padding: 100px 20px;
+        background-size: cover !important;
+    }
+    
+    #powerful-solutions {
+        padding: 60px 0;
+        text-align: center;
+        font-size: large;
+    }
+    
+    #powerful-solutions i {
+        font-size: 80px;
+        color: #c0242e;
+        margin-bottom: 20px;
+    }
+    
+    #powerful-solutions h3 {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    #powerful-solutions .btn {
+        margin: 20px 0 10px 0;
+    }
+    
+    #powerful-solutions .sale {
+        background: #FC0;
+        padding: 6px 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: small;
+        transition: 0.5s;
+    }
+    
+    #why,
+    #blog-articles {
+        padding: 100px 0;
+        clear: both;
+    }
+    
+    .why-choose-us-icon {
+        width: 81px;
+        background-image: url(https://whc.ca/wp-content/themes/whc/css-modules/images/icon-sprite.png?v1?v1);
+        height: 81px;
+        background-repeat: no-repeat;
+        margin: 40px auto 15px;
+    }
+    
+    #cira-campaign-2020 {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        background: #cc132c;
+        text-transform: uppercase;
+        font-size: 5em;
+        line-height: 1em;
+        text-align: center;
+    }
+</style>
+
+<body id="body">
+    <style>
+        .dropdown-toggle::after {
+            display: none;
+        }
+        
+        .text-decoration-none {
+            text-decoration: none!important;
+        }
+        /* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+        
+        .icon-width {
+            width: 2rem;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            if ($(window).width() > 991) {
+                $('.navbar-light .d-menu').hover(function() {
+                    $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+                }, function() {
+                    $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+                });
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <div id="top" class="container-fluid">
+        <div id="menu" class="container">
+            <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="/">
+                        <img src="https://whc.ca/wp-content/themes/whc/css-modules/images/logo_en-normal.svg">
+
+                    </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+    <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbar4">
+                        <ul class="navbar-nav mr-auto pl-lg-4">
+                            <li class="nav-item px-lg-2 active">
+                                <a class="nav-link" href="#"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
+                            </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Services</a> </li>
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>About</a> </li>
+
+                            <li class="nav-item px-lg-2 dropdown d-menu">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-caret-square-down"></i></span>Dropdown
+    <svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+    </a>
+                                <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Contact</a> </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-twitter"></i><span class="d-lg-none ml-3">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-facebook"></i><span class="d-lg-none ml-3">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-instagram"></i><span class="d-lg-none ml-3">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+    <div id="primary" class="content-area">
+        <div id="content" class="site-content" role="main">
+
+            <article id="post-175" class="post-175 page type-page status-publish has-post-thumbnail hentry language-en_ca">
+                <header class="entry-header text-center">
+                    <div class="row justify-content-md-center">
+
+                    </div>
+                </header>
+                <!-- .entry-header -->
+
+                <div class="entry-content pt-5 mt-5">
+
+                    <div id="domain-spinner" class="v2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <div class="domain-spinner-container">
+                                        <form action="" language="English" method="post" id="domain-spinner-form" whmcs_server="https://clients.whc.ca" domain="register">
+                                            <input type="hidden" name="sld" value="" />
+                                            <input type="hidden" name="tld" value="" />
+                                            <div class="domain-spinner-content input-group input-group-lg">
+                                                <div class="domain-spinner-register input-group mb-2">
+                                                    <input type="search" class="form-control domain-spinner-search-input register" placeholder="Find your perfect domain" autofocus data-test="whcca-landing-domain-spinner-search-input">
+                                                    <div class="input-group-prepend">
+                                                        <button type="submit" class="btn btn-primary domain-spinner-search-button register" name="search" data-test="whcca-landing-domain-spinner-search-button">
+								Search								</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="tld-index">
+                                        <li>
+                                            <a href="#"><img src="https://whc.ca/wp-content/themes/whc/images/tld-ca-color.svg" style="height: 16px;">.CA C$9.99</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src=" https://whc.ca/wp-content/themes/whc/images/tld-net-color.svg" style="height: 16px;">.CA C$9.99</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="featured-products" class="container-fluid">
+                    <div class="row py-3">
+                        <div class="col-md-12 weareopen text-center">
+                            <div class="row">
+                                <div class="hosting col-md-5">
+                                    <h2>Choose superior<br>web hosting</h2>
+                                    <a href="# class="btn btn-lg btn-danger">Get Web Hosting</a><br>
+                                    <span>Starting at only <strong>$3.89/mo</strong>.</span><br>
+                                </div>
+                                <div class="domain offset-md-2 col-md-5">
+                                    <h2>Find your perfect<br>.CA domain name</h2>
+                                    <a href="#" class="btn btn-lg btn-danger">Search Domains</a><br>
+                                    <span>Starting at only <strong>$9.99/year</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="powerful-solutions" class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <i class="fa fa-server"></i>
+                            <h3>Web Hosting</h3>
+                            Get fast and unlimited web hosting for your site
+                            <a href="#" class="btn btn-primary btn-block">Get Hosting</a>
+                            <span class="sale">Save up to 70% Off!</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <h3>Cloud Servers</h3>
+                            Take full control with our fastest virtual servers
+                            <a href="#" class="btn btn-primary btn-block">Compare Clouds</a>
+                            <span class="sale">Sale: 8% Off!</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <i class="fas fa-hdd"></i>
+                            <h3>Dedicated Servers</h3>
+                            Boost your business with dedicated hardware
+                            <a href="#" class="btn btn-primary btn-block">View Servers</a>
+                            <span class="sale">Save up to 5%!</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <i class="fab fa-wordpress"></i>
+                            <h3>WordPress</h3>
+                            Manage your WordPress websites easily
+                            <a href="#" class="btn btn-primary btn-block">Get WordPress</a>
+                            <span class="sale">Save up to 71% Off!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="why" class="container text-center">
+                    <h2>Why Choose Web Hosting Canada for Web Hosting?</h2>
+                    <div class="row">
+                        <div class="col-md-4 col-sd-6">
+                            <div class="why-choose-us-icon" title="Fast web Hosting" style="background-position: -1px -348px;"></div>
+                            <h4>Built for speed</h4>
+                            Up to 3x faster than competitors.
+                        </div>
+                        <div class="col-md-4 col-sd-6">
+                            <div class="why-choose-us-icon" title="cPanel powered by Cloudlinux" style="background-position: -85px -448px;"></div>
+                            <h4>World’s Best Control Panel</h4>
+                            Powered by cPanel with Cloudlinux.
+                        </div>
+                        <div class="col-md-4 col-sd-6">
+                            <div class="why-choose-us-icon" title="one click installs. WordPress, Drupal and more" style="background-position: -78px -541px;"></div>
+                            <h4>1-Click Installs</h4>
+                            Over 300 Apps, including WordPress, Drupal.
+                        </div>
+                        <div class="col-md-4 col-sd-6">
+                            <div class="why-choose-us-icon" title="Canadian based hosting" style="background-position: 1px -429px;"></div>
+                            <h4>Canadian Geolocation</h4>
+                            Get closer to your clients with servers located on the Canadian East &amp; West Coasts.
+                        </div>
+                        <div class="col-md-4 col-sd-6">
+                            <div class="why-choose-us-icon" title="great customer support" style="background-position: -84px -364px;"></div>
+                            <h4>24/7 Expert Assistance</h4>
+                            The help you need, when you need it.
+                        </div>
+                        <div class="col-md-4 col-sd-6">
+                            <div class="why-choose-us-icon" title="built in website security" style="background-position: -1px -515px;"></div>
+                            <h4>Built-in security</h4>
+                            To keep your site safe from hackers &amp; malware.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="relance" class="container-fluid text-center">
+                    Ready to Get Started? We’re available 24/7!<br>
+                    <a href="#" class="btn btn-lg btn-outline-light trio">Call us at <strong>1-000-000-0000</strong></a>
+                    <a href="" class="btn btn-lg btn-outline-light trio launchChatSession">Chat with us</a>
+                    <a href="#" class="btn btn-lg btn-outline-light trio">Search your Perfect Domain</a>
+                </div>
+        </div>
+        <!-- .entry-content -->
+
+        <footer class="entry-meta">
+        </footer>
+        <!-- .entry-meta -->
+        </article>
+        <!-- #post -->
+
+
+    </div>
+    <!-- #content -->
+    </div>
+    <!-- #primary -->
+    <section id="pre-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul>
+                        <li>Hosting &amp; Servers</li>
+                        <li><a href="#">Canadian Web Hosting</a></li>
+                        <li><a href="#">Canadian Cloud Servers</a></li>
+                        <li><a href="#">Reseller Web Hosting</a></li>
+                        <li><a href="#">Dedicated Servers</a></li>
+                        <li><a href="#">Managed WordPress</a></li>
+                        <li><a href="#">Anycast DNS</a></li>
+                        <li><a href="#">Free Website Migration</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul>
+                        <li>Domains &amp; Websites</li>
+                        <li><a href="#">Domain Name Search</a></li>
+                        <li><a href="#">Domain Name Transfer</a></li>
+                        <li><a href="#">Weebly Site Builder</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul>
+                        <li>Security &amp; SSL</li>
+                        <li><a href="#">SSL Certificates</a></li>
+                        <li><a href="#">SiteSafe Protection</a></li>
+                        <li><a href="#">Enterprise Anti-Spam</a></li>
+                        <li><a href="#">Domain Privacy Protection</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul>
+                        <li>Online Marketing</li>
+                        <li><a href="#">Search Engine Optimization</a></li>
+                        <li><a href="#">Email Marketing</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="#">Blog &amp; News</a></li>
+                        <li><a href="#">About WHC</a></li>
+                        <li><a href="#">WHC Reviews</a></li>
+                        <li><a href="#">Green Web Hosting</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul>
+                        <li>Support</li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Open Support Ticket</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="follow">Follow us</span>
+                    <a href="#" target="_blank" class="facebook">
+                        <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                    <a href="#" target="_blank" class="twitter">
+                        <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                    <a href="#" target="_blank" class="linkedin">
+                        <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                    <a href="#" target="_blank" class="instagram">
+                        <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                    <a href="#" target="_blank" class="youtube">
+                        <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    © 2021 Web Hosting Canada
+
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
